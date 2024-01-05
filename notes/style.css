@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: cascadia-code, monospace;
+    font-size: 14px;
+    background-color: #111;
+    color: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+}
+
+body::-webkit-scrollbar {
+    width: 0em;
+}
+
+#note {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-family: cascadia-code, monospace;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button {
+    background-color: #7b7d7f;
+    color: #fefefe;
+    border: none;
+    outline: none;
+    font-family: cascadia-code, monospace;
+    font-size: 14px;
+    padding: 0rem 1rem;
+    margin: 0.25rem;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+#note-form {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.25rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: 3rem;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+}
+
+#util-form {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.25rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: 3rem;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+    /* On pousse tout le contenue d'apres de 0.25rem */
+    margin-bottom: 3rem;
+}
+
+#notes {
+    padding: 3rem 0rem;
+    font-size: medium;
+}
+
+.check {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    height: 1rem;
+    width: 1rem;
+    background-color: #7b7d7f;
+    color: #363333;
+    border: none;
+    outline: none;
+    font-family: cascadia-code, monospace;
+    font-size: 14px;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.check:checked {
+    animation: rotate 1.5s forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    font-family: cascadia-code, monospace;
+    font-size: 14px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #7b7d7f;
+    font-style: italic;
+    font-family: cascadia-code, monospace;
+    font-size: 14px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.date {
+    color: #7b7d7f;
+    font-family: cascadia-code, monospace;
+    font-size: 12px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    /* on aligne la date a droite */
+    float: right;
+}
+
+#clear {
+    margin-left: auto;
+}
+
+#util {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-size: large;
+    padding-top: 0.25rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#delete_div {
+    position: absolute;
+}
+
+#deleter {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 0.25rem 1rem;
+    margin: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 550px) {
+    #util {
+        font-size: small;
+        margin-right: 0.25rem;
+        margin-left: 0.25rem;
+        margin-top: 0rem;
+    }
+}
