@@ -22,7 +22,7 @@ calc.addEventListener('click', (event) => {
     console.log("Height : " + h + " Weight : " + w);
 
     if (h && w) {
-        imc.innerText = `Your IMC : ${w / (h * h)}`;
+        imc.innerText = `Your BMI : ${w / (h * h)}`;
         status.innerText = `Status : ${w / (h * h) < 18.5 ? "Underweight" : w / (h * h) < 24.9 ? "Normal" : w / (h * h) < 29.9 ? "Overweight" : "Obese"}`
     } else {
         imc.innerText = "Please enter values";
