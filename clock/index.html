@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<body>
+    <header>
+        <button id="home">Home</button>
+        <h1>Clock</h1>
+        <p id="UTC">UTC : 00:00:00</p>
+    </header>
+    <div id="clock">
+        <div id="date"></div>
+        <div id="time"></div>
+    </div>
+    <div id="controls">
+        <div id="timer">
+            <h2>Timer</h2>
+            <label for="t_time">Time to wait: </label>
+            <input type="text" id="t_time" placeholder="00:00:00">
+            <p id="t_out">0:0:0</p>
+            <div id="btn2">
+                <button id="t_reset">Reset</button>
+                <button id="t_start-stop">Start</button>
+            </div>
+        </div>
+        <div id="stopwatch">
+            <h2>Stopwatch</h2>
+            <p id="sw_out">0:0:0</p>
+            <div id="btn">
+                <button id="reset">Reset</button>
+                <button id="start-stop">Start</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

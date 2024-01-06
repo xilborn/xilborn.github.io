@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    background-color: #252525;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: whitesmoke;
+    padding: 15px 32px;
+    border-radius: 2rem;
+}
+
+#UTC {
+    font-size: large;
+    margin: 0;
+    margin-top: 0.25rem;
+    margin-right: 0.5rem;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#clock {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+#clock > div {
+    align-self: center;
+    font-size: larger;
+}
+
+
+#controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+#stopwatch, #timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#stopwatch, #timer {
+    border-style: solid;
+    height: 30rem;
+    width: 15rem;
+}
+
+#stopwatch > #btn, #timer > #btn2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+#stopwatch > #btn > button, #timer > #btn2 > button {
+    font-size: large;
+}
+
+#stopwatch > p, #timer > p {
+    font-size: xx-large;
+}
+
+#stopwatch > p, #stopwatch > #btn, #timer > p, #timer > #btn2 {
+    margin-top: auto;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: x-large;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+    text-align: center;
+}
+input:focus {
+    outline: none;
+}
