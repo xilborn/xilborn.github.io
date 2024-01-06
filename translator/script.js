@@ -28,6 +28,8 @@ clear.addEventListener('click', (event) => {
 // Assume a function `translateText` to send a request to the Google Translate API
 function translateText(text, sourceLang, targetLang, callback) {
     const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=${sourceLang}&tl=${targetLang}&dt=t&q=${encodeURI(text)}`;
+    // refais l'url (nom: url2) mais avec DeepL API
+    const url2 = `https://api-free.deepl.com/v2/translate?auth_key=4c8c8c4f-6f7a-7b6d-9a5c-7f6b5f6b5f6b&text=${encodeURI(text)}&target_lang=${targetLang}&source_lang=${sourceLang}`;
 
     fetch(url)
         .then(response => response.json())
@@ -50,11 +52,19 @@ translate.addEventListener('click', (event) => {
     });
 });
 
+input.addEventListener('keyup', (event) => {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        translate.click();
+    }
+})
+
 paste.addEventListener('click', (event) => {
     event.preventDefault();
     input.value = input.value + navigator.clipboard.readText();
 })
 
 copy.addEventListener('click', (event) => {
+    event.preventDefault();
     navigator.clipboard.writeText(output.value);
 })
