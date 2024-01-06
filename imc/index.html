@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="icon.ico">
+        <title>IMC Calculator</title>
+    </head>
+    <body>
+        <header>
+            <button id="home">Home</button>
+            <h1>IMC Calculator</h1>
+        </header>
+
+        <form id="imc-form">
+            <div id="dheight">
+                <label for="height">Height (m) :</label>
+                <input type="number" id="height" placeholder="ex : 1.75" step="0.01">
+            </div>
+            <div id="dweight">
+                <label for="weight">Weight (kg) :</label>
+                <input type="number" id="weight" placeholder="ex : 75" step="0.01">
+            </div>
+            <div id="age">
+                <button id="btn">Calculate</button>
+            </div>
+
+        </form>
+
+        <div id="result">
+            <p id="imc"></p>
+            <p id="status"></p>
+            <p>Attention ! IMC is an estimation only.</p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
