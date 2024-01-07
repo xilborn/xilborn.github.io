@@ -103,3 +103,47 @@ input {
 input:focus {
     outline: none;
 }
+
+@media screen and (max-width: 450px) and (max-height: 940px) {
+    #controls {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #timer, #stopwatch {
+        margin-top: 1rem;
+        width: 98%;
+        height: 15rem;
+    }
+    #timer > input {
+        width: 90%;
+        height: 1.5rem;
+        font-size: larger;
+    }
+    h2 {
+        font-size: xx-large;
+    }
+}
+@media screen and (max-height: 685px) {
+    #timer, #stopwatch {
+        margin-top: 1rem;
+        width: 98%;
+        height: 10rem;
+    }
+    #UTC {
+        font-size: medium;
+        margin: 0;
+    }
+    p {
+        margin-bottom: 0.5rem !important;
+    }
+    #timer {
+        height: max-content;
+    }
+    #stopwatch {
+        margin-top: 3rem;
+    }
+    #controls {
+        height:max-content;
+        margin-top: 1rem;
+    }
+}
