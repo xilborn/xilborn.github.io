@@ -32,7 +32,7 @@ btn.addEventListener("click", (event) => {
     let m = maj.checked;
     let m2 = min.checked;
     let n = num.checked;
-    let s = num.checked;
+    let s = sym.checked;
 
     let len = length.value;
 
