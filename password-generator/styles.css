@@ -1,0 +1,94 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #868686;
+    color: #000;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #222;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    border-radius: 0.5rem;
+}
+
+input {
+    background-color: #555;
+    border: none;
+    color: #fff;
+    text-align: center;
+    border-radius: 1rem;
+} input:focus {
+    outline: none;
+    background-color: #bbb;
+    color: #000;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 0;
+}
+
+#btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+}
+
+p {
+    font-size: x-large;
+    font-family: cursive;
+}
+
+.check:checked {
+    animation: rotate 1.5s forwards;
+}
+
+.check {
+    height: 1rem;
+    width: 1rem;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#copy {
+    padding: 0.5rem 1rem;
+    background-color: #555555;
+}
