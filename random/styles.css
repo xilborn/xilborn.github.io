@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #444;
+    color: #fff;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: large;
+    color: whitesmoke;
+    padding: 15px 32px;
+    border-radius: 2rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+} input:focus {
+    background-color: #777;
+    color: #fff;
+    outline: none;
+} ::placeholder {
+    color: aqua;
+    opacity: 0.5;
+} input::selection {
+    background-color: red;
+} input:disabled {
+    opacity: 0.5;
+}
+
+#random {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+} #random > * {
+    width: 90%;
+    align-self: center;
+    text-align: center;
+}
+
+select {
+    background-color: #222;
+    border: none;
+    color:navajowhite;
+    outline: none;
+    height: 2rem;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+} 
