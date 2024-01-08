@@ -1,0 +1,30 @@
+<!-- Génère une page Web de rappel -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rappel</title>
+</head>
+<body>
+    <header>
+        <button id="home">Home</button>
+        <h1>Rappel</h1>
+    </header>
+    <div id="new">
+        <label for="rappel">Rappel : </label>
+        <input type="text" id="rappel" placeholder="Rappel name">
+        <label for="date">Date : </label>
+        <input type="datetime-local" id="date">
+        <button id="btn">Add</button>
+    </div>
+    <div id="old">
+        <button id="clear">Clear</button>
+        <ul id="list">All rappel : </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
