@@ -1,0 +1,42 @@
+<!-- Génère un template de base d'une page HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.ico">
+    <title>Color generator</title>
+</head>
+<body>
+    <header>
+        <button id="home">Home</button>
+        <h1>Color generator</h1>
+    </header>
+    <main>
+        <div id="info">
+            <input type="number" id="hm" placeholder="Enter number of colors" value="5">
+            <select id="type">
+                <option value="hex">Hexadecimal</option>
+                <option value="rgb">RGB</option>
+                <option value="hsl">HSL</option>
+                <option value="hsv">HSV</option>
+                <option value="rgba">RGBA</option>
+                <option value="hwb">HWB (no background)</option>
+                <option value="cmyk">CMYK (no background)</option>
+            </select>
+        </div>
+        <div>
+            <ul id="color"></ul>
+        </div>
+        <div id="controls">
+            <button id="btn">Generate</button>
+            <button id="clear">Clear</button>
+        </div>
+        <div class="hidden" id="infoo"></div>
+    </main>
+
+    <script src="/common.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

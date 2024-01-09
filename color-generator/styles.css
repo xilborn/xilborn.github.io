@@ -1,0 +1,82 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #222;
+    color: #fff;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#color {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: large;
+    color: whitesmoke;
+    padding: 15px 32px;
+    border-radius: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 1em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+input, select {
+    margin-right: 1em;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 0.5em;
+}
+
+.hidden {
+    display: none;
+}
+
+#infoo {
+    margin-bottom: 2em;
+    margin-top: 1em;
+    text-align: center;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    color: black;
+    border-radius: 0.5em;
+    backdrop-filter: blur(50px);
+
+    position:relative;
+    bottom: 10em;
+}

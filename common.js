@@ -36,7 +36,7 @@ function notif(str) {
 }
 
 setInterval(() => {
-    let l = localStorage.getItem("rlist");
+    let l = localStorage.getItem("rlist") || "";
     let alles = [];
     l = l.replace(/<li>/g, "");
     l = l.replace("All rappel : ", "");
@@ -52,3 +52,13 @@ setInterval(() => {
         }
     }
 }, 10);
+
+if (localStorage.getItem("rlist") == null) {
+    localStorage.setItem("rlist", "All rappel : ");
+} else if (localStorage.getItem("active") == null) {
+    localStorage.setItem("active", 0);
+} else if (localStorage.getItem("completed") == null) {
+    localStorage.setItem("completed", 0);
+} else if (localStorage.getItem("couter") == null) {
+    localStorage.setItem("couter", 0);
+}
