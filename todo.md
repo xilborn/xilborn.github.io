@@ -12,3 +12,5 @@
 - [x] Add a password generator system
 - [x] Add a random number generator system
 - [x] Add a rappel system
+- [ ] Add a random word generator system
+- [ ] Add a random color generator system
