@@ -1,0 +1,63 @@
+body {
+    background-color: #6693a2;
+    color: #1d34db;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*
+#1d34db
+#5fa40f
+#6693a2
+#996ef8
+#2d5492
+*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #2d5492;
+    border: none;
+    color: #5fa40f;
+    padding: 15px 32px;
+    border-radius: 2rem;
+}
+
+input {
+    background-color: #2d5492;
+    color: #996ef8;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 2rem;
+    outline: none;
+    text-align: center;
+}
+
+#info {
+    margin-top: 0.5em;
+    font-size: large;
+}
+
+#info > * {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#error {
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}

@@ -59,3 +59,8 @@ footer > p {
 img {
     filter: invert();
 }
+
+.com {
+    font-size: small;
+    color:rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,34 @@
+<!-- Génère une page Web de recherche de meteo -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    <header>
+        <button id="home">Home</button>
+        <h1>Weather</h1>
+    </header>
+    <div id="search">
+        <label for="city">City : </label>
+        <input type="text" id="city" placeholder="Enter city name">
+        <button id="btn">Search</button>
+    </div>
+    <div id="error"></div>
+    <div id="weather">
+        <div id="info">
+            <p id="temp">Temperature : ?</p>
+            <p id="weather">Weather : ?</p>
+            <p id="humidity">Humidity : ?</p>
+            <p id="pressure">Pressure : ?</p>
+            <p id="wind">Wind : ?</p>
+            <p id="uv">UV Index : ?</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
