@@ -18,3 +18,5 @@
 - [x] Add a rappel system
 - [x] Add a random color generator system
 - [x] Add a text editor system
+
+# TO FIX :

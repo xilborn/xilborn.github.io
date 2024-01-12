@@ -35,7 +35,9 @@ edit.addEventListener('keydown', (event) => {
     } else if (event.keyCode === 8 && edit.innerText[edit.innerText.length - 1] === "\n") {
         data["nbline"]--;
         data["char"]--;
-        lines.removeChild(lines.lastElementChild);
+        if (lines.removeChild(lines.lastElementChild).innerHTML !== "<p>1</p>") {
+            lines.removeChild(lines.lastElementChild);
+        }
     } else {
         data["char"]++;
     }
