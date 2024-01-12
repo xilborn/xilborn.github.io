@@ -1,0 +1,96 @@
+body {
+    background-color: #121212;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: #fefefe solid 1px;
+}
+
+header > * {
+    margin-right: 5px;
+}
+
+button, select, select:disabled {
+    background-color: rgb(124, 124, 124);
+    outline: none;
+    border: none;
+    color: whitesmoke;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+
+footer {
+    color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    border-top: #fefefe solid 1px;
+
+    position: fixed;
+    bottom: 0;
+} p {
+    margin: 0;
+    padding: 0;
+} #char {
+    margin-right: 15px;
+} #pos {
+    margin-left: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#lines {
+    list-style-type: none;
+    padding: 0;
+    color: orangered;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 1px;
+    border-right: #fefefe solid 1px;
+    width: fit-content;
+    height: 100%;
+}
+
+#editor {
+    margin-top: 1px;
+    color: #afafaf;
+    flex: 1;
+    min-height: 94vh;
+} #editor:focus {
+    outline: none;
+}
+
+.hidden {
+    display: none;
+} .file {
+    position: fixed;
+    top: 50vh;
+    left: 35vw;
+    color: #afafaf;
+} .file > #s-label, .file > #s-input {
+    display: none;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50vh;
+    left: 35vw;
+    color: #afafaf;
+}

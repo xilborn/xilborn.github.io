@@ -13,3 +13,5 @@
 - [x] Add a random number generator system
 - [x] Add a rappel system
 - [x] Add a random color generator system
+- [x] Add a text editor system
+- [ ] Add a text to speech system

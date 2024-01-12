@@ -55,10 +55,16 @@ setInterval(() => {
 
 if (localStorage.getItem("rlist") == null) {
     localStorage.setItem("rlist", "All rappel : ");
-} else if (localStorage.getItem("active") == null) {
+}
+if (localStorage.getItem("active") == null) {
     localStorage.setItem("active", 0);
-} else if (localStorage.getItem("completed") == null) {
+}
+if (localStorage.getItem("completed") == null) {
     localStorage.setItem("completed", 0);
-} else if (localStorage.getItem("couter") == null) {
+}
+if (localStorage.getItem("couter") == null) {
     localStorage.setItem("couter", 0);
+}
+if (localStorage.getItem("nlist") == null) {
+    localStorage.setItem("nlist", "");
 }

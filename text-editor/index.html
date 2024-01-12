@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body>
+    <header>
+        <button id="home">Home</button>
+        <select id="file">
+            <option selected disabled value="edf">File</option>
+            <option value="open">Open file</option>
+            <option value="new">New file</option>
+            <option value="save">Save file</option>
+            <option value="saveas">Save as</option>
+        </select>
+        <select id="edit">
+            <option selected disabled value="edf">Edit</option>
+            <optgroup label="Edit">
+            <option value="undo">Undo</option>
+            <option value="redo">Redo</option>
+            <optgroup label="Format">
+            <option value="cut">Cut</option>
+            <option value="copy">Copy</option>
+            <option value="paste">Paste</option>
+            <optgroup label="Selection">
+            <option value="selectall">Select all</option>
+            <option value="delete">Delete</option>
+            <optgroup label="Find">
+            <option value="find">Find</option>
+            <option value="replace">Replace</option>
+        </select>
+    </header>
+
+    <main>
+        <div id="lines"><p>1</p></div>
+        <div id="editor" contenteditable="true" @input="update($event.target.innerText)">Enter your text here</div>
+    </main>
+
+    <div id="dafuck" class="hidden">
+        <div>
+            <label for="file-input" id="file-label">Enter a file : </label>
+            <input type="file" id="file-input">
+        </div>
+        <div>
+            <label for="s-input" id="s-label">Replace : </label>
+            <input type="text" id="s-input">
+        </div>
+    </div>
+
+    <footer>
+        <p id="pos">Line ?, Column ?</p>
+        <p id="char">Char ?, Word ?</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
