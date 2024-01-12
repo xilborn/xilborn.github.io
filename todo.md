@@ -1,11 +1,11 @@
 ## TODO :
 
-- # IN PROGRESS :
+# IN PROGRESS :
 - [ ] Add a calculator system
 - [ ] Add a converter system
 - [ ] Add a text to speech system
 
-- # DONE :
+# DONE :
 - [x] Add a notes system
 - [x] Add a translation system
 - [x] Add a BMI calculator system
