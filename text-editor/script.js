@@ -33,10 +33,10 @@ edit.addEventListener('keydown', (event) => {
         p.innerText = data["nbline"];
         lines.appendChild(p);
     } else if (event.keyCode === 8 && edit.innerText[edit.innerText.length - 1] === "\n") {
-        data["nbline"]--;
         data["char"]--;
-        if (lines.removeChild(lines.lastElementChild).innerHTML !== "<p>1</p>") {
+        if (!lines.lastElementChild.classList.contains("nodel")) {
             lines.removeChild(lines.lastElementChild);
+            data["nbline"]--;
         }
     } else {
         data["char"]++;

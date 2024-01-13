@@ -119,8 +119,8 @@ btn.addEventListener("click", (event) => {
 
         let date = `${new Date().getFullYear()}/${new Date().getMonth() + 1}/${new Date().getDate()} ${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`;
         let li = document.createElement("li");
-        li.innerText = note.value;
-        li.innerHTML = `<input type="checkbox" class="check" /> ${li.innerText} <span class="date">${date}</span>`;
+        li.innerHTML = `<input type="checkbox" class="check" /> <span id="text"></span> <span class="date">${date}</span>`;
+        li.querySelector('span#text').innerText = note.value;
 
         noteList.appendChild(li);
         info.innerText = `Tasks : ${couter} | Completed : ${completed} | Active : ${active}`;
