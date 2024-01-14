@@ -1,0 +1,80 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #222;
+    color: #fff;
+    user-select: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    color: whitesmoke;
+    padding: 15px 32px;
+    border-radius: 2rem;
+    backdrop-filter: blur(50px);
+}
+
+textarea {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    color: whitesmoke;
+    font-size: larger;
+    text-align: center;
+    border-radius: 2rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    height: 15rem;
+} textarea::placeholder {
+    color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    font-size: x-large;
+    align-items: left;
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li {
+    font-size: medium;
+}
+
+#new, #old {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#new {
+    border-bottom: #fff solid 1px;
+}
+
+#btn {
+    margin-bottom: 0.5rem;
+}
+
+#clear {
+    margin-top: 0.5rem;
+}
+

@@ -1,0 +1,27 @@
+<!-- Génère une page Web de chat en temps réel -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body>
+    <header>
+        <button id="home">Home</button>
+        <h1>Chat</h1>
+        <button id="report">Report</button>
+    </header>
+
+    <ul id="messages"></ul>
+    <form id="form">
+        <input type="text" id="input" autocomplete="off" placeholder="Type a message">
+        <button id="send">Send</button>
+    </form>
+
+    <script src="/common.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

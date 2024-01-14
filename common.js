@@ -68,3 +68,6 @@ if (localStorage.getItem("couter") == null) {
 if (localStorage.getItem("nlist") == null) {
     localStorage.setItem("nlist", "");
 }
+if (localStorage.getItem("tts_list") == null) {
+    localStorage.setItem("tts_list","<ul id='list'>All text already speaked : </ul>");
+}

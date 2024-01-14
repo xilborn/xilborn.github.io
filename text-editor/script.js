@@ -148,6 +148,7 @@ fileinput.addEventListener("keydown", (event) => {
         edit.innerText = edit.innerText.replace(tofind, toreplace);
         dafuck.classList.toggle("hidden");
         dafuck.classList.toggle("search");
+        document.getElementById("korin").classList.toggle("hidden");
     }
 })
 
@@ -220,6 +221,9 @@ edi.addEventListener("change", (event) => {
     } else if (edi.value == "replace") {
         dafuck.classList.toggle("hidden");
         dafuck.classList.toggle("search");
+
+        document.getElementById("korin").classList.toggle("hidden");
+
         label.innerText = "Find : ";
         fileinput.type = "text";
         ko = 3;
