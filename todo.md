@@ -22,5 +22,5 @@
 - [x] Add a rappel system
 - [x] Add a random color generator system
 - [x] Add a text editor system
-- [ ] Add a video player system
+- [x] Add a video player system
 - [ ] Add a (really simple) discussion board system 

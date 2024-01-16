@@ -1,0 +1,35 @@
+<!-- Génère une page Web de génération de nombre aleatoire -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+</head>
+<body>
+    <header>
+        <button id="home">Home</button>
+        <h1>Video player</h1>
+        <div id="charge">
+            <input type="file" id="videoInput" accept="video/*">
+            <button onclick="loadVideo()">Charger la vidéo</button>
+        </div>
+    </header>
+
+    <div id="video">
+        <video id="vid" width="640" height="360" controls>
+        </video> 
+    </div>
+    <div id="Controls">
+        <button onclick="playVideo()">Play</button>
+        <button onclick="pauseVideo()">Pause</button>
+        <button onclick="seekForward()">Forward</button>
+        <button onclick="seekBackward()">Backward</button>
+    </div>
+
+    <script src="/common.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

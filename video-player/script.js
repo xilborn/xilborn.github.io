@@ -1,30 +1,38 @@
 /*-----------------FUNCTIONS---------------------------------------------------------------------*/
+function playVideo() {
+  video.play();
+}
+
+function pauseVideo() {
+  video.pause();
+}
+
+function seekForward() {
+  video.currentTime += 10; // Avance de 10 secondes
+}
+
+function seekBackward() {
+  video.currentTime -= 10; // Recule de 10 secondes
+}
+
+function loadVideo() {
+    const file = videoInput.files[0];
+    const videoURL = URL.createObjectURL(file);
+    video.src = videoURL;
+}
 
 /*-----------------DOM---------------------------------------------------------------------------*/
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOM loaded!");
+    console.log("DOM loaded !");
 });
 
 /*-----------------DEFINITIONS-------------------------------------------------------------------*/
+const video = document.getElementById("vid");
 const home = document.getElementById("home");
-const report = document.getElementById("report");
-const list = document.getElementById("messages");
-const text = document.getElementById("input");
-const send = document.getElementById("send");
+const videoInput = document.getElementById("videoInput");
 
 /*-----------------EVENTS------------------------------------------------------------------------*/
 home.addEventListener("click", (event) => {
     event.preventDefault();
-    window.location.href = "/";
-});
-
-report.addEventListener("click", (event) => {
-    event.preventDefault();
-    window.location.href = "https://github.com/Xilborn/xilborn.github.io/issues/new";
-});
-
-send.addEventListener("click", (event) => {
-    event.preventDefault();
-
-    
+    window.location.href = '/';
 })

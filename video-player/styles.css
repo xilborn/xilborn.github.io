@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: cascadia-code, monospace;
+    font-size: 14px;
+    background-color: #111;
+    color: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+}
+
+body::-webkit-scrollbar {
+    width: 0em;
+}
+
+button, input {
+    background-color: #7b7d7f;
+    color: #fefefe;
+    border: none;
+    outline: none;
+    font-family: cascadia-code, monospace;
+    font-size: 14px;
+    padding: 0rem 1rem;
+    margin: 0.25rem;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5em;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    margin-left: 2em;
+}
+
+@media screen and (max-width: 550px) {
+    #util {
+        font-size: small;
+        margin-right: 0.25rem;
+        margin-left: 0.25rem;
+        margin-top: 0rem;
+    }
+}
+
+#Controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+#video {
+    display: flex;
+    justify-content: space-around;
+}
