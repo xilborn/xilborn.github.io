@@ -23,4 +23,3 @@
 - [x] Add a random color generator system
 - [x] Add a text editor system
 - [x] Add a video player system
-- [ ] Add a (really simple) discussion board system 

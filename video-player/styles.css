@@ -82,3 +82,36 @@ h1 {
     display: flex;
     justify-content: space-around;
 }
+
+video {
+    background-color: #000;
+    color: #fff;
+}
+
+#progress {
+    display: flex;
+    justify-content: space-around;
+}
+
+#progressBar {
+    width: 780px;
+}
+
+@media screen and (max-width: 780px) {
+    video {
+        width: 100%;
+        height: auto;
+    }
+    progress {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    #util {
+        font-size: small;
+        margin-right: 0.25rem;
+        margin-left: 0.25rem;
+        margin-top: 0rem;
+    }
+}
