@@ -1,0 +1,118 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2px;
+    color: #f5f5f5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #212121;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+label {
+    color: #f5f5f5;
+    font-weight: bold;
+}
+
+#home {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid #111;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #134715;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#login-result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#fick {
+    position: fixed;
+    top: 0;
+    transition: ease 0.5s;
+    color: orchid;
+} #fick:hover {
+    color: orangered;
+    transition: ease 0.5s;
+    transform: scale(1.1);
+}
+
+#duck {
+    position: fixed;
+    bottom: 0;
+    transition: ease 0.5s;
+    left: 0;
+} #duck:hover {
+    color: orangered;
+    transition: ease 0.5s;
+    transform: scale(1.1);
+    translate: 100px;
+}
+
+#fluck {
+    position: fixed;
+    top: 0;
+    transition: ease 0.5s;
+    right: 0;
+} #fluck:hover {
+    color: orangered;
+    transition: ease 0.5s;
+    transform: scale(1.1);
+    translate: -100px;
+}
