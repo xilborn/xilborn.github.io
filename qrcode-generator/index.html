@@ -1,0 +1,43 @@
+<!-- Génère une page Web de création de QR Code -->
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QR Code Generator</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="icon.ico">
+    </head>
+    <body>
+        <header>
+            <button id="home">Home</button>
+            <h1>QR Code Generator</h1>
+        </header>
+
+        <main>
+            <div id="info">
+                <input type="text" id="url" placeholder="Enter URL">
+                <select id="size">
+                    <option value="16">16x16</option>
+                    <option value="32">32x32</option>
+                    <option value="64">64x64</option>
+                    <option value="128">128x128</option>
+                    <option value="256">256x256</option>
+                    <option value="512">512x512</option>
+                    <option value="1024">1024x1024</option>
+                </select>
+            </div>
+
+            <div id="controls">
+                <button id="generate">Generate</button>
+                <button id="download">Download</button>
+            </div>
+
+            <div id="qrcode"></div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+        <script src="/common.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
