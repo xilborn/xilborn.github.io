@@ -38,7 +38,7 @@ loginForm.addEventListener("submit", (e) => {
     // Vérifier les informations de connexion
     if (username === "admin" && password === pwd) {
         // Connexion réussie
-        window.location.href = "/public/global";
+        window.location.href = "/password-game/global";
     } else {
         // Erreur de connexion
         loginResult.textContent = "Identifiants incorrects";
