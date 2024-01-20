@@ -26,6 +26,6 @@
 - [ ] Add a voice recorder system
 - [ ] Add a voice to text converter system
 - [x] Add a QR code generator system
-- [ ] Add a QR code scanner system
+- [x] Add a QR code scanner system
 - [ ] Add a music player system
 - [ ] Add a random image generator system
