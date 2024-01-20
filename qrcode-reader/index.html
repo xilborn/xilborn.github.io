@@ -1,0 +1,34 @@
+<!-- Génère une page Web de lecture de QR Code -->
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>QR Code Reader</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="icon.ico">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <button id="home">Home</button>
+            <h1>QR Code Reader</h1>
+        </header>
+
+        <main>
+            <div id="info">
+                <video id="video" width="100%" height="100%" autoplay></video>
+                <canvas id="canvas" style="display: none;" willReadFrequently></canvas>
+
+                <input type="file" id="file">
+                <button id="scan">Scan</button>
+            </div>
+
+            <div id="result">
+            </div>
+        </main>
+
+        <script src="\lib\qr-scanner-master\qr-scanner-master\qr-scanner.umd.min.js"></script>
+        <script src="script.js"></script>
+        <script src="/common.js"></script>
+    </body>
+</html>
