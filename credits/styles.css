@@ -1,0 +1,55 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: aliceblue;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 50%;
+}
+
+h2 {
+    font-size: x-large;
+    margin: 0;
+}
+
+li {
+    font-size: medium;
+    margin: 0;
+}
+
+ul {
+    margin-top: 0;
+}
+
+a {
+    color: orangered;
+    font-family: cursive;
+    transition: ease 0.5s;
+}
+a:hover {
+    color: yellow;
+    font-size: large;
+    text-decoration: none;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: whitesmoke;
+    padding: 15px 32px;
+    border-radius: 0.5rem;
+}

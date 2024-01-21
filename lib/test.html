@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Charger la feuille de style de Font Awesome -->
+        <title>Test</title>
+        <style>
+            input[type="checkbox"].demo3 {
+                display: none;
+            }
+                input[type="checkbox"].demo3 + label::before {
+                font-family: "Font Awesome 5 Free";
+                content: '\f0c8';
+                font-size: 1.2em;  
+                color: #00B7E8;
+                margin-right: 0.3rem  ;
+            }
+            input[type="checkbox"].demo3:checked + label::before {
+                content:'\f14a';
+                color: #00B7E8;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="checkbox" class="demo3" id="demo3">
+        <label for="demo3">Démo 3</label>
+    </body>
+</html>

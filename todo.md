@@ -3,6 +3,7 @@
 - [x] Text editor (lines count)
 - [x] Notes (add innerText and not innerHTML)
 - [x] Text editor (fix inputs apparition)
+- [ ] QR Code generator (fix download on mobile)
 
 
 ## TODO LIST :
@@ -28,4 +29,5 @@
 - [x] Add a QR code generator system
 - [x] Add a QR code scanner system
 - [ ] Add a music player system
-- [ ] Add a random image generator system
+- [x] Add the todo list 
+- [ ] Add a credits page
