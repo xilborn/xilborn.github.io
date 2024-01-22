@@ -80,3 +80,10 @@ ul {
     margin-left: 1rem;
     padding: 0;
 }
+
+.date  {
+    font-size: 12px;
+    color: darkgrey;
+    margin-right: 0.5rem;
+    float: right;
+}

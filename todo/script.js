@@ -14,7 +14,7 @@ function getTodos() {
                 } else {
                     if (todos[t].includes("[x]")) {
                         let texte = todos[t].replace("- [x]", "");
-                        li.innerHTML = `<input type='checkbox' class='chek' disabled checked /><label for='chek'></label> <span id='text'>${texte}</span>`;
+                        li.innerHTML = `<input type='checkbox' class='chek' disabled checked /><label for='chek'></label> <span id='text'>${texte.split("Finished")[0]}</span>  <span class='date'>Finished${texte.split("Finished")[1]}</span>`;
                         todo.appendChild(li);
                     } else {
                         let texte = todos[t].replace("- [ ]", "");
@@ -46,7 +46,7 @@ function getTofixs() {
             ) {} else {
                 if (todos[t].includes("[x]")) {
                     let texte = todos[t].replace("- [x]", "");
-                    li.innerHTML = `<input type='checkbox' class='chek' disabled checked /><label for='chek'></label> <span id='text'>${texte}</span>`;
+                    li.innerHTML = `<input type='checkbox' class='chek' disabled checked /><label for='chek'></label> <span id='text'>${texte.split("Finished")[0]}</span>  <span class='date'>Finished${texte.split("Finished")[1]}</span>`;
                     tofix.appendChild(li);
                 } else {
                     let texte = todos[t].replace("- [ ]", "");
