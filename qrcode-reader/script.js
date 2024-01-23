@@ -15,15 +15,7 @@ const canvas = document.getElementById("canvas");
 
 const qrScanner = new QrScanner(
     video,
-    result => {
-        let out = document.getElementById("result");
-        if (result.startsWith("https://") || result.startsWith("http://")) {
-            window.open(result, "_blank");
-        } else {
-            out.style.color = "green";
-            out.innerText = "Decoded qr code: " + result;
-        }
-    },
+    result => out.innerText = "Decoded qr code: " + result,
 );
 let a = true
 
@@ -65,16 +57,6 @@ scan.addEventListener("click", (event) => {
     }
 
     QrScanner.scanImage(image)
-        .then((result) => {
-            if (result.startswith("https://") || result.startsWith("http://")) {
-                window.open(result, "_blank");
-            } else {
-                out.style.color = "green";
-                out.innerText = "Decoded qr code: " + result;
-            }
-        })
-        .catch((error) => {
-            out.innerText = "No QR code detected."
-            out.style.color = "red";
-        });
+        .then((result) => out.innerText = "Decoded qr code: " + result)
+        .catch((error) => out.innerText = "No QR code detected.");
 })
