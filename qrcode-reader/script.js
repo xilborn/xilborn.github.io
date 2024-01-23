@@ -15,7 +15,14 @@ const canvas = document.getElementById("canvas");
 
 const qrScanner = new QrScanner(
     video,
-    result => out.innerText = "Decoded qr code: " + result,
+    result => {
+        if (result.startsWith("https://") || result.startsWith("http://")) {
+            window.open(result, "_blank");
+        } else {
+            out.style.color = "green";
+            out.innerText = "Decoded qr code: " + result;
+        }
+    },
 );
 let a = true
 
@@ -27,14 +34,6 @@ navigator.mediaDevices
         video.play();
         qrScanner.start();
         a = true
-    })
-    .then((result) => {
-        if (result.startswith("https://") || result.startsWith("http://")) {
-            window.open(result, "_blank");
-        } else {
-            out.style.color = "green";
-            out.innerText = "Decoded qr code: " + result;
-        }
     })
     .catch(function (err) {
         out.innerText = "Error: " + err;

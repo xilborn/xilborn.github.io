@@ -31,3 +31,4 @@
 - [ ] Add a music player system
 - [x] Add the todo list                                 Finished the 2024/01/21 (web page) | 2024/01/09 (file)
 - [x] Add a credits page                                Finished the 2024/01/22
+- [ ] Add a pdf reader system
