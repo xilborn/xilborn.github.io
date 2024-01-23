@@ -16,6 +16,7 @@ const canvas = document.getElementById("canvas");
 const qrScanner = new QrScanner(
     video,
     result => {
+        let out = document.getElementById("result");
         if (result.startsWith("https://") || result.startsWith("http://")) {
             window.open(result, "_blank");
         } else {
