@@ -57,6 +57,16 @@ scan.addEventListener("click", (event) => {
     }
 
     QrScanner.scanImage(image)
-        .then((result) => out.innerText = "Decoded qr code: " + result)
-        .catch((error) => out.innerText = "No QR code detected.");
+        .then((result) => {
+            if (result.startswith("https://") || result.startsWith("http://")) {
+                window.open(result, "_blank");
+            } else {
+                out.style.color = "green";
+                out.innerText = "Decoded qr code: " + result;
+            }
+        })
+        .catch((error) => {
+            out.innerText = "No QR code detected."
+            out.style.color = "red";
+        });
 })
