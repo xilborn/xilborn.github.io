@@ -1,4 +1,10 @@
 /*-----------------FUNCTIONS---------------------------------------------------------------------*/
+fonction detectURL(result) {
+    if (result.startsWith("https://"))  {
+        out.innerText = "Detected URL : " + result;
+} else {
+        out.innerText = "Detected Texte : " + result;
+}
 
 /*-----------------DOM---------------------------------------------------------------------------*/
 document.addEventListener("DOMContentLoaded", function () {
