@@ -5,6 +5,7 @@ fonction detectURL(result) {
 } else {
         out.innerText = "Detected Texte : " + result;
 }
+}
 
 /*-----------------DOM---------------------------------------------------------------------------*/
 document.addEventListener("DOMContentLoaded", function () {
