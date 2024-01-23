@@ -28,6 +28,14 @@ navigator.mediaDevices
         qrScanner.start();
         a = true
     })
+    .then((result) => {
+        if (result.startswith("https://") || result.startsWith("http://")) {
+            window.open(result, "_blank");
+        } else {
+            out.style.color = "green";
+            out.innerText = "Decoded qr code: " + result;
+        }
+    })
     .catch(function (err) {
         out.innerText = "Error: " + err;
     });
