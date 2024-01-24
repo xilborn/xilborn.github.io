@@ -116,3 +116,16 @@ button:hover {
     transform: scale(1.1);
     translate: -100px;
 }
+
+@media screen and (max-width: 940px) {
+    #fluck {
+        bottom: 0 !important;
+        top: auto !important;
+    }
+}
+@media screen and (max-width: 460px) {
+    #fick {
+        font-size: large;
+        margin-top: 35px;
+    }
+}
