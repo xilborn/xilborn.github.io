@@ -13,7 +13,7 @@ const info = document.getElementById("infoo");
 home.addEventListener("click", (event) => {
     event.preventDefault();
     window.location.href = "/";
-})
+});
 
 gen.addEventListener("click", (event) => {
     event.preventDefault();
@@ -68,9 +68,9 @@ gen.addEventListener("click", (event) => {
 
         color_div.appendChild(li);
     }
-})
+});
 
 clear.addEventListener("click", (event) => {
     event.preventDefault();
     color_div.innerHTML = "";
-})
+});

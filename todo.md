@@ -4,6 +4,9 @@
 - [x] Notes (add innerText and not innerHTML)           Finished the 2024/01/13
 - [x] Text editor (fix inputs apparition)               Finished the 2024/01/??
 - [ ] QR Code generator (fix download on mobile)
+- [x] Text editor (fix starting counter)                Finished the 2024/01/24
+- [x] Random number generator (fix blocking input)      Finished the 2024/01/24
+- [x] Password generator (remove space as option)       Finished the 2024/01/24
 
 
 ## TODO LIST :

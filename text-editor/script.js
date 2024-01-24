@@ -17,8 +17,8 @@ var ko = 0;
 
 var data = {
     nbline: 1,
-    char: 20,
-    word: 4,
+    char: 0,
+    word: 0,
 }
 
 home.addEventListener('click', (event) => {
@@ -32,14 +32,15 @@ edit.addEventListener('keydown', (event) => {
         data["nbline"]++;
         p.innerText = data["nbline"];
         lines.appendChild(p);
-    } else if (event.keyCode === 8 && edit.innerText[edit.innerText.length - 1] === "\n") {
-        data["char"]--;
-        if (!lines.lastElementChild.classList.contains("nodel")) {
+    } else if (event.keyCode === 8) {
+        if (!lines.lastElementChild.classList.contains("nodel") && edit.innerText[edit.innerText.length - 1] === "\n") {
             lines.removeChild(lines.lastElementChild);
             data["nbline"]--;
+        } else {
+            data["char"] = edit.innerText.replace(/(\r\n|\n|\r)/gm, "").length + 1;
         }
     } else {
-        data["char"]++;
+        data["char"] = edit.innerText.replace(/(\r\n|\n|\r)/gm, "").length + 1;
     }
 
     data["word"] = edit.innerText.split(" ").length;

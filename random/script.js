@@ -98,11 +98,12 @@ generate.addEventListener("click", (event) => {
 });
 
 typee.addEventListener("change", (event) => {
-    if (typee.value == 'bin') {
+    if (event.target.value == 'bin') {
         max.disabled = true;
         min.disabled = true;
-    } else if (typee.value == 'hex') {
+    } else if (event.target.value == 'hex') {
         min.disabled = true;
+        max.disabled = false;
         max.placeholder = 'Enter length of a number (ex : 8 => 4a50bd87)';
     } else {
         max.disabled = false;

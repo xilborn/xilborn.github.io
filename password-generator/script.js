@@ -59,7 +59,7 @@ btn.addEventListener("click", (event) => {
 
     // on génère un mot de passe aleatoire
     let password = '';
-    for (let i = 0; i < len; i += 1) {
+    for (let i = 0;password.length < len; i++) {
         let random = Math.floor(Math.random() * list.length);
         password += list[random][Math.floor(Math.random() * list[random].length)];
     }
@@ -69,5 +69,5 @@ btn.addEventListener("click", (event) => {
 
 copy.addEventListener("click", (event) => {
     event.preventDefault();
-    navigator.clipboard.writeText(output.innerText);
+    navigator.clipboard.writeText(output.innerText.split(":")[1].trim());
 })
