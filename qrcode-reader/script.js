@@ -1,10 +1,13 @@
 /*-----------------FUNCTIONS---------------------------------------------------------------------*/
-fonction detectURL(result) {
-    if (result.startsWith("https://"))  {
+function detectURL(result) {
+    if (result.startsWith("https://") || result.startsWith("http://")) {
+        out.style.color = "blue";
         out.innerText = "Detected URL : " + result;
-} else {
-        out.innerText = "Detected Texte : " + result;
-}
+        window.open(result, "_blank");
+    } else {
+        out.style.color = "green";
+        out.innerText = "Detected Text : " + result;
+    }
 }
 
 /*-----------------DOM---------------------------------------------------------------------------*/
@@ -22,7 +25,7 @@ const canvas = document.getElementById("canvas");
 
 const qrScanner = new QrScanner(
     video,
-    result => out.innerText = "Decoded qr code: " + result,
+    result => detectURL(result),
 );
 let a = true
 
@@ -64,6 +67,6 @@ scan.addEventListener("click", (event) => {
     }
 
     QrScanner.scanImage(image)
-        .then((result) => out.innerText = "Decoded qr code: " + result)
-        .catch((error) => out.innerText = "No QR code detected.");
+        .then((result) => detectURL(result))
+        .catch((error) => out.style.color = "red", out.innerText = "No QR code detected.");
 })
