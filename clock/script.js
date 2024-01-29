@@ -84,11 +84,11 @@ t_ss.addEventListener("click", (event) => {
         let h = data[0], m = data[1], s = data[2];
         interval = setInterval(() => {
                 s -= 1;
-            if (s == 60) {
+            if (s == 0 || s == -1) {
                 s = 0;
                 m -= 1;
             }
-            if (m == 60) {
+            if (m == 0) {
                 m = 0;
                 h -= 1;
             }
