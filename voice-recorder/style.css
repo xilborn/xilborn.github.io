@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-color: #252525;
+    color: #adadad;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h1 {
+    margin: 0em;
+    margin-right: 45%;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.5);
+    outline: none;
+    border-radius: 0.5em;
+    border: none;
+    padding: 8px 12px;
+    margin: 0.5em;
+    transition: ease 0.5s;
+} button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.display, .controllers {
+    width: 100%;
+    padding: 20px 0;
+    margin: 0;
+}
+
+#recordButton {
+    position: fixed;
+    bottom: 50%;
+    left: 45%;
+}
+
+main > * {
+    margin-top: 10px;
+    text-align: center;
+}

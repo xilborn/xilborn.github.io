@@ -5,6 +5,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("DOM loaded!");
     old.innerHTML = tts || old.innerHTML;
+    lang.innerText = navigator.language || "en-US";
 });
 
 /*-------DEFINITIONS-----------------------------------------------------------------------------*/
@@ -13,6 +14,7 @@ const text = document.getElementById("text");
 const speak = document.getElementById("btn");
 const clear = document.getElementById("clear");
 const old = document.getElementById("list");
+const lang = document.getElementById("lang");
 
 const tts = localStorage.getItem("tts_list");
 
@@ -35,6 +37,7 @@ speak.addEventListener("click", (event) => {
     let speech = new SpeechSynthesisUtterance();
 
     speech.text = text.value;
+    speech.lang = navigator.language || "en-US";
     speech.volume = 1;
     speech.rate = 1;
     speech.pitch = 1;
