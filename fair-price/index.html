@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.ico">
+
+    <title>Fair price</title>
+</head>
+<body>
+    <header>
+        <button id="home">Home</button>
+        <h1>Fair price</h1>
+    </header>
+
+    <main>
+        <div id="info">
+            <p id="score">Score : 100</p>
+            <p id="min">Minimum price : ?</p>
+            <p id="max">Maximum price : ?</p>
+            <p id="att">Attempts : 0</p>
+        </div>
+
+        <div id="setup">
+            <input type="number" id="minimum" placeholder="Enter minimum">
+            <input type="number" id="maximum" placeholder="Enter maximum">
+            <button id="start">Start</button>
+        </div>
+
+        <div id="finder" class="hide">
+            <input type="number" id="price">
+            <button id="btn">Calculate</button>
+        </div>
+
+        <div id="result">
+            <p id="res"></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="/common.js"></script>
+</body>
+</html>

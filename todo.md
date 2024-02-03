@@ -37,3 +37,6 @@
 - [x] Add a credits page                                Finished the 2024/01/22
 - [ ] Add a pdf reader system
 - [ ] Add a random mimic generator system
+- [x] Add a fair price game                             Finished the 2024/02/03
+- [x] Add a dice generator system                       Finished the 2024/02/03
+- [ ] Add a coin flipper system
