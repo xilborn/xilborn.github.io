@@ -1,0 +1,16 @@
+[General]
+title = "Xilborn website"
+author = "Esmyxvatu"
+about = "A small regroupement of every of my static website"
+tags = ["web"]
+status = "Finished"
+
+[Except]
+files = []
+dirs = []
+
+[Website]
+website = "https://xilborn.github.io"
+
+[Doc]
+readme = "README.md"

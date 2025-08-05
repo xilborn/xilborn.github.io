@@ -6,41 +6,119 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="icon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <title>Xilborn menu</title>
 </head>
 <body>
     <header>
-        <h1>Xilborn menu</h1>
+        <h1 id="title">Xilborn menu</h1>
         <button onclick="location.href = 'https://github.com/Xilborn/xilborn.github.io/issues/new'">Report Bugs | Suggestions</button>
     </header>
     <h3>All sites :</h3>
-    <ul>
-        <li><a href="/notes"><img src="notes/icon.ico" width="20px" height="20px" alt="notes-icon"> Notes</a></li>
-        <li><a href="/translator"><img src="translator/icon.ico" width="20px" height="20px" alt="translator-icon"> Translator</a><span class="com"> [Can have problem with API]</span></li>
-        <li><a href="/bmi"><img src="bmi/icon.ico" width="20px" height="20px" alt="bmi-icon"> BMI Calculator</a></li>
-        <li><a href="/clock"><img src="clock/icon.ico" width="20px" height="20px" alt="clock-icon"> Clock</a></li>
-        <li><a href="/browser-info-retriver"><img src="browser-info-retriver/icon.ico" width="20px" height="20px" alt="browser-info-retriver-icon"> Browser Information Retriver</a></li>
-        <li><a href="/random"><img src="random/icon.ico" width="20px" height="20px" alt="random-icon"> Random Number Generator</a></li>
-        <li><a href="/pseudo-generator"><img src="pseudo-generator/icon.ico" width="20px" height="20px" alt="pseudo-generator-icon"> Pseudo Generator</a></li>
-        <li><a href="/password-generator"><img src="password-generator/icon.ico" width="20px" height="20px" alt="password-generator-icon"> Password Generator</a></li>
-        <li><a href="/rappel"><img src="rappel/icon.ico" width="20px" height="20px" alt="rappel-icon"> Rappel</a></li>
-        <li><a href="/color-generator"><img src="color-generator/icon.ico" width="20px" height="20px" alt="color-generator-icon"> Color Generator</a></li>
-        <li><a href="/weather"><img src="weather/icon.ico" width="20px" height="20px" alt="weather-icon"> Weather</a><span class="com"> [Can have problem with API]</span></li>
-        <li><a href="/text-editor"><img src="text-editor/icon.ico" width="20px" height="20px" alt="text-editor-icon"> Text Editor</a></li>
-        <li><a href="/text-to-speech"><img src="text-to-speech/icon.ico" width="20px" height="20px" alt="text-to-speech-icon"> Text to speech</a></li>
-        <li><a href="/video-player"><img src="/video-player/icon.ico" width="20px" height="20px" alt="video-player-icon"> Video player</a><span class="com"> [Can have problem of size on mobile]</span></li>
-        <li><a href="/password-game/login"><img src="password-game/icon.ico" width="20px" height="20px" alt="password-game-icon"> Password Game</a></li>
-        <li><a href="/qrcode-generator"><img src="qrcode-generator/icon.ico" width="20px" height="20px" alt="qrcode-generator-icon"> QR Code Generator</a></li>
-        <li><a href="/qrcode-reader"><img src="qrcode-reader/icon.ico" width="20px" height="20px" alt="qrcode-reader-icon"> QR Code Reader</a></li>
-        <li><a href="/voice-recorder"><img src="voice-recorder/icon.ico" width="20px" height="20px" alt="voice-recorder-icon"> Voice Recorder</a></li>
-        <li><a href="/voice-to-text"><img src="voice-to-text/icon.ico" width="20px" height="20px" alt="voice-to-text-icon"> Voice to Text</a></li>
-        <li><a href="/fair-price"><img src="fair-price/icon.ico" width="20px" height="20px" alt="fair-price-icon"> Fair price Game</a></li>
-        <li><a href="/dice"><img src="dice/icon.ico" width="20px" height="20px" alt="dice-icon"> Dice Simulator</a></li>
-    </ul>
-    <footer>
-        <p><a href="credits/"><img src="credits/icon.ico" width="10px" height="10px" alt="credits-icon"> Credits</a> | <a href="/todo/"><img src="todo/todo.ico" width="10px" height="10px" alt="todo-icon"> Todo</a> | <a href="/license"><img src="lic.ico" width="10px" height="10px" alt="license-icon"> License</a></p>
-    </footer>
+    <main id="main">
+        <article class="card" onclick="location.href = '/notes'">
+            <i data-lucide="notebook-pen"></i>
+            <p>Notes</p>
+        </article>
+        <article class="card apiblem" onclick="location.href = '/translator'">
+            <i data-lucide="languages"></i>
+            <p>Translator</p>
+        </article>
+        <article class="card" onclick="location.href = '/bmi'">
+            <i data-lucide="weight"></i>
+            <p>BMI Calculator</p>
+        </article>
+        <article class="card" onclick="location.href = '/clock'">
+            <i data-lucide="clock"></i>
+            <p>Clock</p>
+        </article>
+        <article class="card" onclick="location.href = '/browser-info-retriver'">
+            <i data-lucide="info"></i>
+            <p>Browser Information Retriver</p>
+        </article>
+        <article class="card" onclick="location.href = '/random'">
+            <i data-lucide="shuffle"></i>
+            <p>Random Number Generator</p>
+        </article>
+        <article class="card" onclick="location.href = '/pseudo-generator'">
+            <i data-lucide="shuffle"></i>
+            <p>Pseudo Generator</p>
+        </article>
+        <article class="card" onclick="location.href = '/password-generator'">
+            <i data-lucide="key"></i>
+            <p>Password Generator</p>
+        </article>
+        <article class="card" onclick="location.href = '/rappel'">
+            <i data-lucide="clock"></i>
+            <p>Rappel</p>
+        </article>
+        <article class="card" onclick="location.href = '/color-generator'">
+            <i data-lucide="palette"></i>
+            <p>Color Generator</p>
+        </article>
+        <article class="card apiblem" onclick="location.href = '/weather'">
+            <i data-lucide="cloud"></i>
+            <p>Weather</p>
+        </article>
+        <article class="card" onclick="location.href = '/text-editor'">
+            <i data-lucide="edit"></i>
+            <p>Text Editor</p>
+        </article>
+        <article class="card" onclick="location.href = '/text-to-speech'">
+            <i data-lucide="speaker"></i>
+            <p>Text to speech</p>
+        </article>
+        <article class="card" onclick="location.href = '/video-player'">
+            <i data-lucide="video"></i>
+            <p>Video player</p>
+        </article>
+        <article class="card" onclick="location.href = '/password-game/login'">
+            <i data-lucide="lock"></i>
+            <p>Password Game</p>
+        </article>
+        <article class="card" onclick="location.href = '/qrcode-generator'">
+            <i data-lucide="qr-code"></i>
+            <p>QR Code Generator</p>
+        </article>
+        <article class="card" onclick="location.href = '/qrcode-reader'">
+            <i data-lucide="scan-qr-code"></i>
+            <p>QR Code Reader</p>
+        </article>
+        <article class="card" onclick="location.href = '/voice-recorder'">
+            <i data-lucide="mic"></i>
+            <p>Voice Recorder</p>
+        </article>
+        <article class="card" onclick="location.href = '/voice-to-text'">
+            <i data-lucide="mic"></i>
+            <p>Voice to Text</p>
+        </article>
+        <article class="card" onclick="location.href = '/fair-price'">
+            <i data-lucide="chart-candlestick"></i>
+            <p>Fair price Game</p>
+        </article>
+        <article class="card" onclick="location.href = '/dice'">
+            <i data-lucide="dices"></i>
+            <p>Dice Simulator</p>
+        </article>
+        <article class="card" onclick="location.href = '/credits'">
+            <i data-lucide="users"></i>
+            <p>Credits</p>
+        </article>
+        <article class="card" onclick="location.href = '/todo'">
+            <i data-lucide="list"></i>
+            <p>Todo</p>
+        </article>
+        <article class="card" onclick="location.href = '/license'">
+            <i data-lucide="scale"></i>
+            <p>License</p>
+        </article>
+    </main>
 
+    <script>
+        lucide.createIcons();
+    </script>
     <script src="common.js"></script>
 </body>
 </html>
